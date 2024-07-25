@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deleteContent()">delete content</button>
+    <script>
+        let mydiv = document.createElement("div")
+        mydiv.textContent = ("hiiiii my name is gaurav")
+        document.body.append(mydiv)
+        function deleteContent(){
+            if(mydiv){
+                mydiv.remove();
+            }
+        }
+    </script>
+</body>
+</html>

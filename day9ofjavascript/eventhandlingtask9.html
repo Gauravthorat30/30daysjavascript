@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement("div");
+        let button = document.createElement("button");
+        div.textContent = "my name is gaurav";
+        button.textContent = "change my name";
+        document.body.appendChild(div);
+        document.body.appendChild(button);
+        
+        button.addEventListener("click" , () => {
+    div.textContent = "my name is not gaurav"
+})
+    </script>
+</body>
+</html>

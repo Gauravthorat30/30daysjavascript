@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deleteLastElement()">delete last element</button>
+
+    
+
+    <script>
+        let div = document.createElement("div");
+        let p1 = document.createElement("p");
+        let p2 = document.createElement("p");
+        let p3 = document.createElement("p");
+        div.textContent = ("main");
+        p1.textContent = ("first");
+        p2.textContent = ("second");
+        p3.textContent = ("third");
+        document.body.appendChild(div);
+        div.appendChild(p1);
+        div.appendChild(p2)
+        div.appendChild(p3)
+        function deleteLastElement(){
+            if(div.lastChild){
+                div.removeChild(div.lastChild);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
